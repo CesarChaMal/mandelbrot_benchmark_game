@@ -1,0 +1,12 @@
+# Python
+/opt/src/Python-3.10.4/bin/python3 -OO mandelbrot.python3-7.py 16000
+
+# Mac
+time python mandelbrot.py 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { python .\mandelbrot.py 16000 }
+
+# Linux
+time python mandelbrot.py 16000 > /dev/null
+

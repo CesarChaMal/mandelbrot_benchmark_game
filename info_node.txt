@@ -1,0 +1,12 @@
+# Node
+/opt/src/node-v18.1.0/bin/node mandelbrot.js 16000
+
+# Mac
+time node mandelbrot.js 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { node .\mandelbrot.js 16000 }
+
+# Linux
+time node mandelbrot.js 16000 > /dev/null
+

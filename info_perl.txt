@@ -1,0 +1,12 @@
+# Pearl
+/opt/src/perl-5.34.0/bin/perl mandelbrot.pl 16000
+
+# Mac
+time perl mandelbrot.pl 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { perl .\mandelbrot.pl 16000 }
+
+# Linux
+time perl mandelbrot.pl 16000 > /dev/null
+

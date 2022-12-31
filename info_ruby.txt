@@ -1,0 +1,11 @@
+# Ruby
+/opt/src/ruby-3.1.2/bin/ruby --yjit -W0 mandelbrot.rb 16000
+
+# Mac
+time ruby mandelbrot.rb 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { ruby .\mandelbrot.rb 16000 }
+
+# Linux
+time ruby mandelbrot.rb 16000 > /dev/null

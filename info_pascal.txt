@@ -1,0 +1,13 @@
+# Pascal
+/opt/src/fpc-3.2.2/bin/fpc -FuInclude/fpascal -XXs -O3 -Ci- -Cr- -g- -CpCOREAVX -CfAVX -Tlinux  -oFPASCAL_RUN mandelbrot.pas
+mv FPASCAL_RUN mandelbrot.fpascal_run
+./mandelbrot.fpascal_run 16000
+
+# Mac
+time ./mandelbrot.fpascal_run 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { .\mandelbrot.fpascal_run 16000 }
+
+# Linux
+time ./mandelbrot.fpascal_run 16000 > /dev/null

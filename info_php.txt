@@ -1,0 +1,12 @@
+# PHP
+/opt/src/php-8.1.5/bin/php -dzend_extension=/opt/src/php-8.1.5/lib/php/extensions/no-debug-non-zts-20210902/opcache.so -dopcache.enable_cli=1 -dopcache.jit_buffer_size=64M -n  mandelbrot.php 16000
+
+# Mac
+time php mandelbrot.php 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { php mandelbrot.php 16000 }
+
+# Linux
+time php mandelbrot.php 16000 > /dev/null
+

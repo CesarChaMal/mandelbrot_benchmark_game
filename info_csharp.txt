@@ -1,0 +1,16 @@
+# C#
+cp mandelbrot.csharpcore-5.csharpcore Program.cs
+cp Include/csharpcore/tmp.csproj .
+mkdir obj
+cp Include/csharpcore/project.assets.json ./obj
+/usr/bin/dotnet build -c Release --no-restore --no-self-contained -r ubuntu-x64 
+/usr/bin/dotnet ./bin/Release/net6.0/ubuntu-x64/tmp.dll 16000
+
+# Mac
+time ./mandelbrot.c_run 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { .\mandelbrot.c_run 16000 }
+
+# Linux
+time ./mandelbrot.c_run 16000 > /dev/null

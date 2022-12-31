@@ -1,0 +1,13 @@
+# Java
+/opt/src/jdk-18/bin/javac -d . -cp . mandelbrot.java
+/opt/src/jdk-18/bin/java  -cp . mandelbrot 16000
+
+# Mac
+time java mandelbrot.java 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { java .\mandelbrot.java 16000 }
+
+# Linux
+time java mandelbrot.java 16000 > /dev/null
+

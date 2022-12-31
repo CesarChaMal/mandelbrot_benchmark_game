@@ -1,0 +1,12 @@
+# Go
+/opt/src/go1.18/go/bin/go build -o mandelbrot.go_run mandelbrot.go
+
+# Mac
+time ./mandelbrot.go_run 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { .\mandelbrot.go_run 16000 }
+
+# Linux
+time ./mandelbrot.go_run 16000 > /dev/null
+

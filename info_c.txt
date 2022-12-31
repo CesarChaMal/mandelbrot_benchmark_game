@@ -1,0 +1,12 @@
+# C
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -pthread mandelbrot.c -o mandelbrot.c_run -lm
+./mandelbrot.c_run 16000
+
+# Mac
+time ./mandelbrot.c_run 16000 > /dev/null
+
+# Windows powershell
+Measure-Command { .\mandelbrot.c_run 16000 }
+
+# Linux
+time ./mandelbrot.c_run 16000 > /dev/null
